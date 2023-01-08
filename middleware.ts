@@ -38,6 +38,7 @@ export default async function middleware(req: NextRequest) {
       ? hostname
           .replace(`.vercel.pub`, "")
           .replace(`.platformize.vercel.app`, "")
+          .replace(`.vercel-platforms-6ljgn2g4t-matoow.vercel.app`, "")
       : hostname.replace(`.localhost:3000`, "");
 
   // rewrites for app pages
