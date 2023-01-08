@@ -24,6 +24,9 @@ export default async function middleware(req: NextRequest) {
   // Get the pathname of the request (e.g. /, /about, /blog/first-post)
   const path = url.pathname;
 
+  console.log('hostname', hostname);
+
+
   // Only for demo purposes - remove this if you want to use your root domain as the landing page
   if (hostname === "vercel.pub" || hostname === "platforms.vercel.app") {
     return NextResponse.redirect("https://demo.vercel.pub");
